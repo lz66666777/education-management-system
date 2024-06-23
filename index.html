@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Education Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#students-section">Students</a></li>
+                <li><a href="#teachers-section">Teachers</a></li>
+                <li><a href="#courses-section">Courses</a></li>
+                <li><a href="#schedules-section">Schedules</a></li>
+                <li><a href="#grades-section">Grades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Students Section -->
+        <section id="students-section">
+            <h2>Students</h2>
+            <form id="student-form">
+                <input type="text" id="student_id" name="student_id" placeholder="Student ID">
+                <input type="text" id="student_name" name="student_name" placeholder="Name">
+                <input type="number" id="student_age" name="student_age" placeholder="Age">
+                <select id="student_gender" name="student_gender">
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <input type="text" id="student_contact" name="student_contact" placeholder="Contact">
+                <input type="text" id="student_address" name="student_address" placeholder="Address">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Teachers Section -->
+        <section id="teachers-section">
+            <h2>Teachers</h2>
+            <form id="teacher-form">
+                <input type="text" id="teacher_id" name="teacher_id" placeholder="Teacher ID">
+                <input type="text" id="teacher_name" name="teacher_name" placeholder="Name">
+                <input type="text" id="teacher_specialization" name="teacher_specialization" placeholder="Specialization">
+                <input type="text" id="teacher_contact" name="teacher_contact" placeholder="Contact">
+                <input type="text" id="teacher_address" name="teacher_address" placeholder="Address">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses-section">
+            <h2>Courses</h2>
+            <form id="course-form">
+                <input type="text" id="course_id" name="course_id" placeholder="Course ID">
+                <input type="text" id="course_name" name="course_name" placeholder="Course Name">
+                <textarea id="course_description" name="course_description" placeholder="Description"></textarea>
+                <input type="text" id="course_teacher" name="course_teacher" placeholder="Assigned Teacher ID">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Schedules Section -->
+        <section id="schedules-section">
+            <h2>Schedules</h2>
+            <form id="schedule-form">
+                <input type="text" id="schedule_id" name="schedule_id" placeholder="Schedule ID">
+                <input type="text" id="schedule_course_id" name="schedule_course_id" placeholder="Course ID">
+                <input type="text" id="schedule_room" name="schedule_room" placeholder="Room">
+                <input type="text" id="schedule_time_slot" name="schedule_time_slot" placeholder="Time Slot">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Grades Section -->
+        <section id="grades-section">
+            <h2>Grades</h2>
+            <form id="grade-form">
+                <input type="text" id="grade_id" name="grade_id" placeholder="Grade ID">
+                <input type="text" id="grade_student_id" name="grade_student_id" placeholder="Student ID">
+                <input type="text" id="grade_course_id" name="grade_course_id" placeholder="Course ID">
+                <input type="text" id="grade_grade" name="grade_grade" placeholder="Grade">
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2023 Education Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
